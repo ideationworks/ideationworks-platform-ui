@@ -1,0 +1,28 @@
+<div class="wrapper">
+
+    <div class="icon">
+
+        <img [src]="icon">
+
+    </div>
+
+    <div class="title">
+
+        {{ title }}
+
+    </div>
+
+    <div class="button">
+
+        <button mat-raised-button
+                [color]="buttonColor"
+                [routerLink]="linkPath"
+                color="primary">
+
+            {{ linkText }}
+
+        </button>
+
+    </div>
+
+</div>

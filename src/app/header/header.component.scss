@@ -1,0 +1,75 @@
+:host {
+    
+    .wrapper {
+        
+        padding: 10px;
+        border-bottom: 1px solid #e6eaee;
+        background-color: #fff;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .left {
+            
+            display: flex;
+            
+            .logo {
+                
+                margin-right: 50px;
+                
+                img {
+                    
+                    height: 70px;
+                    
+                }
+                
+            }
+            
+            .menu {
+                
+                display: flex;
+                align-items: center;
+                
+                .item {
+                    
+                    margin: 10px;
+                    cursor: pointer;
+                    color: #9fa9ba;
+                    font-size: .875rem;
+                    font-weight: 400;
+                    
+                    &:hover {
+                        
+                        color: #666;
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+        .right {
+            
+            .user {
+                
+                cursor: pointer;
+                color: #9fa9ba;
+                font-size: .875rem;
+                font-weight: 400;
+                
+                i {
+                    
+                    margin: 5px;
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

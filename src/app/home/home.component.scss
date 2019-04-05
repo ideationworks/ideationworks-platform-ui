@@ -1,0 +1,32 @@
+:host {
+    
+    .wrapper {
+        
+        
+        .header {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            margin: 50px;
+            
+        }
+        
+        .widgets {
+            
+            display: flex;
+            justify-content: center;
+            
+            app-home-widget {
+                
+                margin: 20px;
+                
+            }
+            
+        }
+        
+    }
+    
+}

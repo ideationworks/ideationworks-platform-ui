@@ -1,0 +1,35 @@
+:host {
+    
+    .wrapper {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        background: #fff;
+        border: 1px solid #e1e1e1;
+        padding: 20px;
+        border-radius: 2px;
+        
+        .icon {
+            
+            height: 150px;
+            
+        }
+        
+        .title {
+            
+            margin: 10px;
+            
+        }
+        
+        .button {
+            
+            margin: 10px;
+            
+        }
+        
+    }
+    
+}
