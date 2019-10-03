@@ -1,3 +1,4 @@
+import { HttpClientModule }        from '@angular/common/http';
 import { NgModule }                from '@angular/core';
 import { BrowserModule }           from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -9,6 +10,8 @@ import { HomeModule }           from './home/home.module';
 import { IdeasModule }          from './ideas/ideas.module';
 import { HeaderComponent }      from './layout/header/header.component';
 import { LeftToolbarComponent } from './layout/left-toolbar/left-toolbar.component';
+import { OauthModule }          from './oauth/oauth.module';
+import { SignupModule }         from './signup/signup.module';
 
 @NgModule({
 
@@ -25,14 +28,18 @@ import { LeftToolbarComponent } from './layout/left-toolbar/left-toolbar.compone
         BrowserModule,
         BrowserAnimationsModule,
         HomeModule,
+        HttpClientModule,
         IdeasModule,
+        OauthModule,
         RouterModule.forRoot([]),
         SharedModule,
+        SignupModule
 
     ],
 
     providers: [],
-    bootstrap: [ AppComponent ]
+    bootstrap: [ AppComponent ],
+
 
 })
 export class AppModule {

@@ -1,4 +1,4 @@
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~@angular/material/prebuilt-themes/purple-green.css";
 @import "~ngx-toastr/toastr.css";
 
 body {
@@ -10,11 +10,33 @@ body {
     font-family: Lato, Roboto, sans-serif;
     
     background: #23262a;
-    //background: linear-gradient(6deg, rgba(43, 47, 47, 1) 0%, rgba(68, 72, 82, 1) 100%);
+    
 }
 
 * {
     
     outline: none;
+    
+}
+
+mat-dialog-container {
+    
+    padding: 0 !important;
+    
+}
+
+ngxux-mat-dialog {
+    
+    .header, .footer {
+        
+        background: #2B2E34 !important;
+        
+    }
+    
+    .content {
+        
+        background: #1d2025 !important;
+        
+    }
     
 }

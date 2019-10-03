@@ -11,6 +11,7 @@ NS		?= default
 VERSION ?= $(shell git rev-parse HEAD)
 APP     ?= ideation-platform-app
 IMAGE   ?= gcr.io/matthewdavis-devqa/$(APP):$(VERSION)
+PORT	?= 80
 
 .PHONY: build
 

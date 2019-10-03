@@ -74,6 +74,12 @@
                     
                 }
                 
+                &:last-child {
+                    
+                    color: springgreen;
+                    
+                }
+                
             }
             
         }
@@ -86,12 +92,12 @@
             button {
                 
                 margin: 10px 25px 10px 10px;
-                color: #eee;
+                color: springgreen;
                 
                 svg {
                     
                     margin: 10px;
-                    color: #eee;
+                    color: springgreen;
                     
                 }
                 

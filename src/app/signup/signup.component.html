@@ -1,0 +1,57 @@
+<ngxux-mat-dialog id="signup">
+
+    <div class="wrapper">
+
+        <form [formGroup]="formGroup">
+
+            <mat-form-field>
+
+                <input matInput
+                       placeholder="Email Address"
+                       formControlName="email">
+
+            </mat-form-field>
+
+            <mat-form-field>
+
+                <input matInput
+                       placeholder="Display Name"
+                       formControlName="displayName">
+
+            </mat-form-field>
+
+            <mat-form-field>
+
+                <input matInput
+                       placeholder="Password"
+                       type="password"
+                       formControlName="password">
+
+            </mat-form-field>
+
+            <mat-form-field>
+
+                <input matInput
+                       placeholder="Verify Password"
+                       type="password"
+                       formControlName="password">
+
+            </mat-form-field>
+
+            <mat-checkbox [formControl]="formGroup.get('subscribeNewsletter')">
+
+                Subscribe me to the newsletter!
+
+            </mat-checkbox>
+
+            <mat-checkbox [formControl]="formGroup.get('subscribeIdeas')">
+
+                Notify me on new ideas!
+
+            </mat-checkbox>
+
+        </form>
+
+    </div>
+
+</ngxux-mat-dialog>
