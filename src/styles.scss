@@ -1,0 +1,20 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~ngx-toastr/toastr.css";
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    letter-spacing: .5px;
+    
+    font-family: Lato, Roboto, sans-serif;
+    
+    background: #23262a;
+    //background: linear-gradient(6deg, rgba(43, 47, 47, 1) 0%, rgba(68, 72, 82, 1) 100%);
+}
+
+* {
+    
+    outline: none;
+    
+}

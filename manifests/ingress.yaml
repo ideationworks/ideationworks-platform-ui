@@ -1,0 +1,17 @@
+#apiVersion: extensions/v1beta1
+#kind:       Ingress
+#metadata:
+#    name: $APP
+#spec:
+#    tls:
+#        -   hosts:
+#                - maas.maa.moodys.com
+#            secretName: tls-maa.moodys.com
+#    rules:
+#        -   host: maas.maa.moodys.com
+#            http:
+#                paths:
+#                    -   path: /
+#                        backend:
+#                            serviceName: $APP
+#                            servicePort: $PORT
