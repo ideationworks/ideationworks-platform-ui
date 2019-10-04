@@ -6,10 +6,15 @@ import { NgProgressHttpModule } from '@ngx-progressbar/http';
 import { NgxuxMatDialogModule } from '@ngxux/ngxux-mat-dialog';
 import { ClipboardModule }      from 'ngx-clipboard';
 import { MaterialModule }       from './material/material.module';
+import { MdEditorComponent }    from './md-editor/md-editor.component';
 
 @NgModule({
 
-    declarations: [],
+    declarations: [
+
+        MdEditorComponent
+
+    ],
 
     imports: [
 
@@ -39,6 +44,9 @@ import { MaterialModule }       from './material/material.module';
         NgxuxMatDialogModule,
 
         MaterialModule,
+
+
+        MdEditorComponent
 
     ],
 

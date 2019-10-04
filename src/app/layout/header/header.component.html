@@ -45,7 +45,7 @@
 
         </div>
 
-        <div class="link">
+        <div class="link" (click)="signupDialogService.open()">
 
             Signup
 
@@ -55,7 +55,7 @@
 
     <div class="right">
 
-        <button mat-stroked-button>
+        <button mat-stroked-button (click)="postDialogService.open()">
 
             <i class="fad fa-layer-plus"></i>
 

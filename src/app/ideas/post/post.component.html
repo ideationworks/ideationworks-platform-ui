@@ -1,0 +1,47 @@
+<ngxux-mat-dialog id="post">
+
+    <div class="wrapper">
+
+        <div class="top">
+
+            <div class="title">
+
+                <mat-form-field>
+
+                    <input matInput
+                           placeholder="Title">
+
+                </mat-form-field>
+
+            </div>
+
+            <div class="category">
+
+                <mat-form-field>
+
+                    <mat-select placeholder="Categories.." multiple>
+
+                        <mat-option>Desktop</mat-option>
+                        <mat-option>Mobile</mat-option>
+
+                    </mat-select>
+
+                </mat-form-field>
+
+            </div>
+
+        </div>
+
+
+        <div class="editor">
+
+            <app-md-editor
+                [compiled]="compiledMarkdown"
+                [placeHolder]="startingValue"
+                (valueChanged)="onValueChanged($event)"></app-md-editor>
+
+        </div>
+
+    </div>
+
+</ngxux-mat-dialog>

@@ -9,7 +9,7 @@ body {
     
     font-family: Lato, Roboto, sans-serif;
     
-    background: #23262a;
+    background: #23262a url('assets/bg.png') no-repeat fixed bottom right;
     
 }
 
@@ -39,4 +39,24 @@ ngxux-mat-dialog {
         
     }
     
+}
+
+.editor {
+    
+    background: #444852;
+    
+    textarea {
+        
+        height: 550px !important;
+        background: #999999;
+        padding: 5px !important;
+        
+    }
+    
+    pre {
+        
+        background: #5b616e;
+        padding: 5px;
+        
+    }
 }

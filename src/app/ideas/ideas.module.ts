@@ -1,9 +1,11 @@
-import { CommonModule }   from '@angular/common';
-import { NgModule }       from '@angular/core';
-import { SharedModule }   from '../../shared/shared.module';
-import { CardComponent }  from './card/card.component';
-import { IdeaComponent }  from './idea/idea.component';
-import { IdeasComponent } from './ideas.component';
+import { CommonModule }          from '@angular/common';
+import { NgModule }              from '@angular/core';
+import { LMarkdownEditorModule } from 'ngx-markdown-editor';
+import { SharedModule }          from '../../shared/shared.module';
+import { CardComponent }         from './card/card.component';
+import { IdeaComponent }         from './idea/idea.component';
+import { IdeasComponent }        from './ideas.component';
+import { PostComponent }         from './post/post.component';
 
 @NgModule({
 
@@ -11,13 +13,15 @@ import { IdeasComponent } from './ideas.component';
 
         IdeasComponent,
         IdeaComponent,
-        CardComponent
+        CardComponent,
+        PostComponent
 
     ],
 
     imports: [
 
         CommonModule,
+        LMarkdownEditorModule,
         SharedModule
 
     ],
@@ -25,7 +29,13 @@ import { IdeasComponent } from './ideas.component';
     exports: [
 
         CardComponent
-        
+
+    ],
+
+    entryComponents: [
+
+        PostComponent
+
     ]
 
 })

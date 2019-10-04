@@ -1,6 +1,6 @@
 import { Component, OnInit }     from '@angular/core';
 import { AuthenticationService } from '../_lib/AuthenticationService';
-import { SignupDialogService }   from './signup/signup-dialog.service';
+import { PostDialogService }     from './ideas/post/post-dialog.service';
 
 @Component({
     selector: 'app-root',
@@ -10,13 +10,13 @@ import { SignupDialogService }   from './signup/signup-dialog.service';
 export class AppComponent implements OnInit {
 
     public constructor(private authenticationService: AuthenticationService,
-                       private signupDialogService: SignupDialogService) {
+                       private postDialogService: PostDialogService) {
 
     }
 
     public ngOnInit(): void {
 
-        this.signupDialogService.open();
+        this.postDialogService.open();
 
     }
 

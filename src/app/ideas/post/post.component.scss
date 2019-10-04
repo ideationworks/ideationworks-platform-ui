@@ -1,0 +1,45 @@
+:host {
+    
+    .wrapper {
+        
+        .top {
+            
+            display: flex;
+            padding: 5px;
+            
+            .title {
+                
+                flex: 1;
+                margin-right: 10px;
+                
+                mat-form-field {
+                    
+                    width: 100%;
+                    
+                }
+                
+            }
+            
+            .category {
+            
+            
+            }
+            
+        }
+        
+        .editor {
+            
+            margin-top: -20px;
+            
+            app-md-editor {
+                
+                height: 200px;
+                background: red;
+                
+            }
+            
+        }
+        
+    }
+    
+}
