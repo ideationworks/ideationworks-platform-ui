@@ -15,7 +15,7 @@ PORT	?= 80
 
 .PHONY: build
 
-all: build push
+deploy: build push install
 
 build: 		; docker build -t $(IMAGE) .
 run: 		; docker run -p 81:80 $(IMAGE)

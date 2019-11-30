@@ -4,6 +4,7 @@ import { BrowserModule }           from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule }            from '@angular/router';
 import { SharedModule }            from '../shared/shared.module';
+import { AboutComponent }          from './about/about.component';
 
 import { AppComponent }         from './app.component';
 import { HomeModule }           from './home/home.module';
@@ -17,6 +18,7 @@ import { SignupModule }         from './signup/signup.module';
 
     declarations: [
 
+        AboutComponent,
         AppComponent,
         HeaderComponent,
         LeftToolbarComponent
@@ -31,7 +33,15 @@ import { SignupModule }         from './signup/signup.module';
         HttpClientModule,
         IdeasModule,
         OauthModule,
-        RouterModule.forRoot([]),
+        RouterModule.forRoot([
+
+            {
+
+                path: 'about',
+                component: AboutComponent
+            }
+
+        ]),
         SharedModule,
         SignupModule
 
