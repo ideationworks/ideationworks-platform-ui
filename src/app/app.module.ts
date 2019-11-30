@@ -13,15 +13,18 @@ import { HeaderComponent }      from './layout/header/header.component';
 import { LeftToolbarComponent } from './layout/left-toolbar/left-toolbar.component';
 import { OauthModule }          from './oauth/oauth.module';
 import { SignupModule }         from './signup/signup.module';
+import {HomeComponent} from './home/home.component';
 
 @NgModule({
 
     declarations: [
 
         AboutComponent,
+        HomeComponent,
         AppComponent,
         HeaderComponent,
-        LeftToolbarComponent
+        LeftToolbarComponent,
+
 
     ],
 
