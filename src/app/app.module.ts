@@ -13,6 +13,7 @@ import { LeftToolbarComponent } from './layout/left-toolbar/left-toolbar.compone
 import { OauthModule }          from './oauth/oauth.module';
 import { SignupModule }         from './signup/signup.module';
 import {HomeComponent} from './home/home.component';
+import {IdeaComponent} from './ideas/idea/idea.component';
 
 @NgModule({
 
@@ -20,6 +21,7 @@ import {HomeComponent} from './home/home.component';
 
         AboutComponent,
         HomeComponent,
+        IdeaComponent,
         AppComponent,
         HeaderComponent,
         LeftToolbarComponent,
@@ -46,6 +48,10 @@ import {HomeComponent} from './home/home.component';
                 path: '',
                 pathMatch: 'full',
                 component: HomeComponent
+            },
+            {
+                path: 'idea',
+                component: IdeaComponent
             }
         ]),
         SharedModule,
