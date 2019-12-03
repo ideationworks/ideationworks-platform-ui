@@ -9,7 +9,7 @@ include .make/Makefile.inc
 
 NS		?= default
 VERSION ?= $(shell git rev-parse HEAD)
-APP     ?= ideation-platform-ui
+APP     ?= ideationworks-platform-ui
 IMAGE	?= registry.gitlab.com/ideation.works/frontend/$(APP):$(VERSION)
 PORT	?= 80
 
