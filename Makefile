@@ -20,3 +20,4 @@ deploy: build push install
 build: 		; docker build -t $(IMAGE) .
 run: 		; docker run -p 81:80 $(IMAGE)
 push:		; docker push $(IMAGE)
+
