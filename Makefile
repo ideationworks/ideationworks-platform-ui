@@ -9,8 +9,8 @@ include .make/Makefile.inc
 
 NS		?= default
 VERSION ?= $(shell git rev-parse HEAD)
-APP     ?= ideation-platform-app
-IMAGE   ?= gcr.io/matthewdavis-devqa/$(APP):$(VERSION)
+APP     ?= ideation-platform-ui
+IMAGE	?= registry.gitlab.com/ideation.works/frontend/$(APP):$(VERSION)
 PORT	?= 80
 
 .PHONY: build

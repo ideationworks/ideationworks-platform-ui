@@ -20,6 +20,8 @@ spec:
             labels:
                 app: $APP
         spec:
+            imagePullSecrets:
+                -   name: docker-registry-ideationworks-ui
             #      nodeSelector:
             #        role: services
             containers:
