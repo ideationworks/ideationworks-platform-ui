@@ -19,6 +19,12 @@ body {
     
 }
 
+button[disabled] {
+    
+    background-color: #666 !important;
+    
+}
+
 mat-dialog-container {
     
     padding: 0 !important;

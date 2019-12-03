@@ -10,7 +10,6 @@ import { AboutComponent }          from './about/about.component';
 
 import { AppComponent }         from './app.component';
 import { HomeComponent }        from './home/home.component';
-import { IdeaComponent }        from './ideas/idea/idea.component';
 import { IdeasModule }          from './ideas/ideas.module';
 import { HeaderComponent }      from './layout/header/header.component';
 import { LeftToolbarComponent } from './layout/left-toolbar/left-toolbar.component';
@@ -47,23 +46,25 @@ import { SignupModule }         from './signup/signup.module';
 
                 path: 'about',
                 component: AboutComponent
-            },
+            }, {
 
-            {
+                path: 'home',
+                component: HomeComponent
+
+            }, {
+
                 path: '',
                 pathMatch: 'full',
-                component: HomeComponent
-            },
-            {
-                path: 'idea',
-                component: IdeaComponent
+                redirectTo: 'home'
+
             }
+
         ]),
         SharedModule,
         SignupModule,
         ToastrModule.forRoot({
 
-            timeOut: 7000,
+            timeOut: 5000,
             positionClass: 'toast-bottom-right',
             preventDuplicates: true,
             progressBar: true,

@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component }    from '@angular/core';
+import { Pageable }     from '../../../_lib/Pageable';
+import { Category }     from '../category';
+import { IdeasService } from '../ideas.service';
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+    selector: 'app-search',
+    templateUrl: './search.component.html',
+    styleUrls: [ './search.component.scss' ]
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent {
 
-  constructor() { }
+    public categories: Pageable<Category>;
 
-  ngOnInit() {
-  }
+    public constructor(private ideasService: IdeasService) {
+
+        ideasService.categoriesGet().subscribe(pageable => this.categories = pageable);
+
+    }
 
 }

@@ -3,11 +3,53 @@
     .wrapper {
         
         display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding: 20px 100px;
+        padding: 15px;
         
+        .left {
+            
+            flex: 0 1 200px;
+            
+            .title {
+                
+                font-size: 16px;
+                color: rebeccapurple;
+            }
+            
+            ul {
+                
+                margin: 15px;
+                padding: 0 5px;
+                
+                li {
+                    
+                    padding: 2px;
+                    cursor: pointer;
+                    color: #ddd;
+                    
+                    &:hover {
+                        
+                        color: rebeccapurple;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+        .right {
+            
+            flex: 1;
+            
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            
+            border-left: 1px solid #6a9ef4;
+            padding-left: 30px;
+            
+        }
     }
     
 }
