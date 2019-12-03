@@ -15,6 +15,7 @@ import { IdeasModule }          from './ideas/ideas.module';
 import { HeaderComponent }      from './layout/header/header.component';
 import { LeftToolbarComponent } from './layout/left-toolbar/left-toolbar.component';
 import { OauthModule }          from './oauth/oauth.module';
+import { ProfileModule }        from './profile/profile.module';
 import { SignupModule }         from './signup/signup.module';
 
 @NgModule({
@@ -38,6 +39,7 @@ import { SignupModule }         from './signup/signup.module';
         HttpClientModule,
         IdeasModule,
         OauthModule,
+        ProfileModule,
         ReactiveFormsModule,
         RouterModule.forRoot([
 

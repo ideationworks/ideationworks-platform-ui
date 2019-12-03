@@ -1,0 +1,65 @@
+:host {
+    
+    .wrapper {
+        
+        .header {
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #6F69AF;
+            padding: 15px;
+            
+            .left {
+                
+                flex: 1;
+                
+                font-size: 20px;
+                color: white;
+                
+            }
+            
+        }
+        
+    }
+    
+    .content {
+        
+        display: flex;
+        padding: 15px;
+        
+        .left {
+            
+            flex: 0 1 200px;
+            
+            ul {
+                
+                margin: 0 0 0 15px;
+                padding: 0;
+                
+                li {
+                    
+                    padding: 2px;
+                    cursor: pointer;
+                    color: #ddd;
+                    
+                    &:hover {
+                        
+                        color: rebeccapurple;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+        .right {
+            
+            border-left: 1px solid #6a9ef4;
+            padding-left: 30px;
+            
+        }
+    }
+    
+}
