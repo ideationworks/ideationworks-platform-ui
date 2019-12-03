@@ -21,5 +21,11 @@ export class IdeasService extends APIClient<Idea> {
         return this.post('ideas', idea);
 
     }
+
+    public ideaGetById(id: string): Observable<Idea> {
+
+        return this.get(`ideas/${ id }`);
+
+    }
     
 }

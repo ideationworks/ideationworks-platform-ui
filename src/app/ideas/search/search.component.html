@@ -22,7 +22,7 @@
 
             <li *ngFor="let category of categories?.content"
                 routerLink="/ideas/search"
-                [queryParams]="{ categories: category.name }">
+                [queryParams]="{ tags: category.name }">
 
                 {{ category.name }}
 
@@ -34,15 +34,8 @@
 
     <div class="right">
 
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
+        <app-card *ngFor="let idea of ideas"
+                  [idea]="idea"></app-card>
 
     </div>
 
