@@ -22,27 +22,25 @@ spec:
         spec:
             imagePullSecrets:
                 -   name: docker-registry-ideationworks-ui
-            #      nodeSelector:
-            #        role: services
             containers:
                 -   image: $IMAGE
                     name:  $APP
                     ports:
                         -   containerPort: $PORT
                             name:          http
-#          readinessProbe:
-#            httpGet:
-#              path: /
-#              port: $PORT
-#            initialDelaySeconds: 1
-#            timeoutSeconds: 1
-#          livenessProbe:
-#            httpGet:
-#              path: /
-#              port: $PORT
-#            initialDelaySeconds: 5
-#            timeoutSeconds: 5
-#          resources:
-#            requests:
-#              cpu: "15m"
-#              memory: 15Mi
+                    readinessProbe:
+                        httpGet:
+                            path: /
+                            port: $PORT
+                        initialDelaySeconds: 1
+                        timeoutSeconds:      1
+                    livenessProbe:
+                        httpGet:
+                            path: /
+                            port: $PORT
+                        initialDelaySeconds: 5
+                        timeoutSeconds:      5
+                    resources:
+                        requests:
+                            cpu:    "15m"
+                            memory: 15Mi
