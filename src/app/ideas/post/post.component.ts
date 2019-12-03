@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import * as marked           from 'marked';
+import { Component, OnInit }                  from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import * as marked                            from 'marked';
+import { ToastrService }                      from 'ngx-toastr';
+import { Pageable }                           from '../../../_lib/Pageable';
+import { Category }                           from '../category';
+import { IdeasService }                       from '../ideas.service';
 
 @Component({
     selector: 'app-post',
@@ -8,17 +13,51 @@ import * as marked           from 'marked';
 })
 export class PostComponent implements OnInit {
 
-    compiledMarkdown: string;
-    startingValue = '';
+    public compiledMarkdown: string;
+    public startingValue = '';
 
-    ngOnInit() {
-        this.startingValue = this.getPlaceHolder();
+    public categories: Pageable<Category>;
 
-        this.compiledMarkdown = this.compileMarkdown(this.startingValue);
+    public formGroup: FormGroup = new FormGroup({
+
+        name: new FormControl('asdf', [
+
+            Validators.minLength(2),
+            Validators.maxLength(255)
+
+        ]),
+
+        description: new FormControl('asdf', [
+
+            Validators.minLength(2),
+            Validators.maxLength(255)
+
+        ]),
+
+        categories: new FormControl('', Validators.required)
+
+    });
+
+    public constructor(private ideasService: IdeasService,
+                       private toastrService: ToastrService) {
+
+        ideasService.categoriesGet().subscribe(pageable => this.categories = pageable);
+
     }
 
-    onValueChanged(value: string) {
+    public ngOnInit() {
+
+        this.startingValue = this.getPlaceHolder();
+        this.compiledMarkdown = this.compileMarkdown(this.startingValue);
+
+    }
+
+    public onValueChanged(value: string) {
+
         this.compiledMarkdown = this.compileMarkdown(value);
+
+        this.formGroup.get('description').setValue(this.compiledMarkdown);
+
     }
 
     private compileMarkdown(value: string): string {
@@ -55,8 +94,15 @@ export class PostComponent implements OnInit {
         );
     }
 
-    public constructor() {
+    public onCreateClick(): void {
 
+        console.log(this.formGroup.value);
+
+        this.ideasService.ideaCreate(this.formGroup.value).subscribe(idea => {
+
+            console.log(idea);
+
+        });
 
     }
 

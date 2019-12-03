@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
     public ngOnInit(): void {
 
-        // this.postDialogService.open();
+        this.postDialogService.open();
 
     }
 
