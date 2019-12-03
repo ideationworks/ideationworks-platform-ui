@@ -14,6 +14,7 @@ import { OauthModule }          from './oauth/oauth.module';
 import { SignupModule }         from './signup/signup.module';
 import {HomeComponent} from './home/home.component';
 import {IdeaComponent} from './ideas/idea/idea.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
 
@@ -21,7 +22,7 @@ import {IdeaComponent} from './ideas/idea/idea.component';
 
         AboutComponent,
         HomeComponent,
-        IdeaComponent,
+
         AppComponent,
         HeaderComponent,
         LeftToolbarComponent,
@@ -36,6 +37,7 @@ import {IdeaComponent} from './ideas/idea/idea.component';
         HttpClientModule,
         IdeasModule,
         OauthModule,
+        ReactiveFormsModule,
         RouterModule.forRoot([
 
             {

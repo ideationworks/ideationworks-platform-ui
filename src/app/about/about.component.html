@@ -1,4 +1,5 @@
 <div class="wrapper">
+
     <div class="header">
 
         <div class="left">
@@ -16,5 +17,79 @@
 
     </div>
 
-</div>
+    <div class="content">
 
+        <div class="left">
+
+            Aboutu sb lahbl ahbl ah
+            Aboutu sb lahbl ahbl ah
+            Aboutu sb lahbl ahbl ah
+            Aboutu sb lahbl ahbl ah
+            Aboutu sb lahbl ahbl ah
+            Aboutu sb lahbl ahbl ah
+            Aboutu sb lahbl ahbl ah
+            Aboutu sb lahbl ahbl ah
+            Aboutu sb lahbl ahbl ah
+
+        </div>
+
+
+        <div class="right">
+
+            <div class="contact">
+
+                <form [formGroup]="formGroup">
+
+                    <div>
+
+                        <mat-form-field>
+
+                            <input matInput
+                                   formControlName="name"
+                                   placeholder="Your Name">
+
+                        </mat-form-field>
+
+                    </div>
+
+                    <div>
+
+                        <mat-form-field>
+
+                            <input matInput
+                                   formControlName="email"
+                                   placeholder="Your Email">
+
+                        </mat-form-field>
+
+                    </div>
+
+                    <div>
+
+                        <mat-form-field>
+
+                <textarea matInput
+                          formControlName="message"
+                          placeholder="Write a Message">
+
+                </textarea>
+
+                        </mat-form-field>
+
+                    </div>
+
+                </form>
+
+                <button mat-raised-button
+                        color="warn"
+                        (click)="onSubmitClick()"
+                        [disabled]="!formGroup.valid">Submit
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -20,5 +20,27 @@
             }
 
         }
+
     }
+
+    .content {
+
+        display: flex;
+        padding: 15px;
+
+        .left {
+
+            flex: 0 1 300px;
+
+
+        }
+
+        .right {
+
+            border-left: 1px solid #6a9ef4;
+            padding-left: 30px;
+
+        }
+    }
+
 }
