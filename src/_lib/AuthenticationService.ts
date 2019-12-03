@@ -1,11 +1,12 @@
-import { Injectable }       from '@angular/core';
-import { JwtHelperService } from '@auth0/angular-jwt';
-import { Subject }          from 'rxjs';
-import { APIClient }        from './APIClient';
-import { RequestResult }    from './RequestResult';
+import { Injectable }          from '@angular/core';
+import { JwtHelperService }    from '@auth0/angular-jwt';
+import { Observable, Subject } from 'rxjs';
+import { APIClient }           from './APIClient';
+import { RequestResult }       from './RequestResult';
+import { User }                from './user';
 
 @Injectable({ providedIn: 'root' })
-export class AuthenticationService extends APIClient<any> {
+export class AuthenticationService extends APIClient<User> {
 
     public static parseToken(jwtToken: string): any {
 
@@ -56,11 +57,11 @@ export class AuthenticationService extends APIClient<any> {
 
     }
 
-    public login(email: string, password: string): any {
+    public login(email: string, password: string): Observable<User> {
 
         localStorage.removeItem('token');
 
-        let subject: Subject<RequestResult<any> | boolean> = new Subject();
+        let subject: Subject<RequestResult<User> | boolean> = new Subject();
 
         this.post<any>(`users/login`, {
 

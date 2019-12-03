@@ -60,3 +60,22 @@ ngxux-mat-dialog {
         
     }
 }
+
+.mat-badge-content {
+    
+    background: rgba(0, 0, 0, .1);
+    right: 2px !important;
+    top: -14px !important;
+    
+    
+}
+
+.down {
+    
+    .mat-badge-content {
+        
+        top: 20px !important;
+        
+    }
+    
+}

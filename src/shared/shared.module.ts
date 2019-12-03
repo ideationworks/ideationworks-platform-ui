@@ -5,6 +5,7 @@ import { NgProgressModule }     from '@ngx-progressbar/core';
 import { NgProgressHttpModule } from '@ngx-progressbar/http';
 import { NgxuxMatDialogModule } from '@ngxux/ngxux-mat-dialog';
 import { ClipboardModule }      from 'ngx-clipboard';
+import { TruncatePipe }         from '../_lib/TruncatePipe';
 import { MaterialModule }       from './material/material.module';
 import { MdEditorComponent }    from './md-editor/md-editor.component';
 
@@ -12,7 +13,8 @@ import { MdEditorComponent }    from './md-editor/md-editor.component';
 
     declarations: [
 
-        MdEditorComponent
+        MdEditorComponent,
+        TruncatePipe
 
     ],
 
@@ -45,8 +47,8 @@ import { MdEditorComponent }    from './md-editor/md-editor.component';
 
         MaterialModule,
 
-
-        MdEditorComponent
+        MdEditorComponent,
+        TruncatePipe
 
     ],
 

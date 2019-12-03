@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component }    from '@angular/core';
+import { IdeasService } from './ideas.service';
 
 @Component({
-  selector: 'app-ideas',
-  templateUrl: './ideas.component.html',
-  styleUrls: ['./ideas.component.scss']
+    selector: 'app-ideas',
+    templateUrl: './ideas.component.html',
+    styleUrls: [ './ideas.component.scss' ]
 })
-export class IdeasComponent implements OnInit {
+export class IdeasComponent {
 
-  constructor() { }
+    public constructor(private ideasService: IdeasService) {
 
-  ngOnInit() {
-  }
+    }
 
 }

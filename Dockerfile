@@ -1,16 +1,10 @@
 FROM node:alpine AS builder
-ARG NPM_TOKEN
-
-RUN apk add --update
 
 WORKDIR /app
 
-#COPY .npmrc .
 COPY package.json .
 
-#RUN echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
 RUN npm install
-#RUN rm -f .npmrc
 
 COPY . .
 

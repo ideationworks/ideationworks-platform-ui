@@ -21,7 +21,7 @@ export class MdEditorComponent {
 
     @Output() public valueChanged = new EventEmitter<string>();
 
-    private onValueChange(e) {
+    public onValueChange(e) {
 
         const body = e.target.value;
 
@@ -36,5 +36,5 @@ export class MdEditorComponent {
         }
 
     }
-    
+
 }
