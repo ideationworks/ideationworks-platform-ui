@@ -9,6 +9,7 @@ import { IdeasComponent }        from './ideas.component';
 import { PostComponent }         from './post/post.component';
 import { SearchComponent }       from './search/search.component';
 import { VoteComponent } from './vote/vote.component';
+import { SearchHeaderComponent } from './search/search-header/search-header.component';
 
 @NgModule({
 
@@ -19,7 +20,8 @@ import { VoteComponent } from './vote/vote.component';
         CardComponent,
         PostComponent,
         SearchComponent,
-        VoteComponent
+        VoteComponent,
+        SearchHeaderComponent
 
     ],
 

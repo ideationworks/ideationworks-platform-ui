@@ -1,8 +1,9 @@
-import { Component }    from '@angular/core';
-import { Pageable }     from '../../../_lib/Pageable';
-import { Category }     from '../category';
-import { Idea }         from '../idea/idea';
-import { IdeasService } from '../ideas.service';
+import { Component }     from '@angular/core';
+import { Pageable }      from '../../../_lib/Pageable';
+import { Category }      from '../category';
+import { Idea }          from '../idea/idea';
+import { IdeasService }  from '../ideas.service';
+import { SearchService } from './search.service';
 
 @Component({
     selector: 'app-search',
@@ -25,7 +26,8 @@ export class SearchComponent {
 
     public categories: Pageable<Category>;
 
-    public constructor(private ideasService: IdeasService) {
+    public constructor(private ideasService: IdeasService,
+                       public searchService: SearchService) {
 
         ideasService.categoriesGet().subscribe(pageable => this.categories = pageable);
 
