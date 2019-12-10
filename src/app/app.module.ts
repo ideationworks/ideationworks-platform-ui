@@ -85,7 +85,7 @@ import {LoginComponent} from './login/login.component';
 
     providers: [],
     bootstrap: [AppComponent],
-
+    entryComponents: [LoginComponent],
 
 })
 export class AppModule {
