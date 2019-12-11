@@ -1,29 +1,35 @@
 :host {
-    
+
     .wrapper {
-        
+
         display: flex;
         padding: 15px;
-        
+
         .left {
-            
+
             flex: 1;
-            
+
             .title {
-                
+
                 color: #ddd;
                 font-size: 14px;
-                
+
             }
-            
+
+            .tags {
+
+                margin-top: 100px;
+
+            }
+
         }
-        
+
         .right {
-            
+
             flex: 250px;
-            
+
         }
-        
+
     }
-    
+
 }

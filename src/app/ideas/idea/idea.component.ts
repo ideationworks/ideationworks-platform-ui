@@ -1,8 +1,9 @@
-import { Component }      from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { IdeasService }   from '../ideas.service';
-import { Idea }           from './idea';
-import { IdeaService }    from './idea.service';
+import { Component }             from '@angular/core';
+import { ActivatedRoute }        from '@angular/router';
+import { NgxuxAutocompleteItem } from '@ngxux/autocomplete';
+import { IdeasService }          from '../ideas.service';
+import { Idea }                  from './idea';
+import { IdeaService }           from './idea.service';
 
 @Component({
     selector: 'app-idea',
@@ -12,6 +13,14 @@ import { IdeaService }    from './idea.service';
 export class IdeaComponent {
 
     public idea: Idea;
+
+    public tags: Array<NgxuxAutocompleteItem> = [
+
+        { label: 'angular' },
+        { label: 'typescript' },
+        { label: 'javascript' },
+
+    ];
 
     public constructor(private ideasService: IdeasService,
                        private ideaService: IdeaService,
@@ -26,7 +35,7 @@ export class IdeaComponent {
                     ideaService.idea$.next(idea);
 
                     this.idea = idea;
-                    
+
                 });
 
             }
