@@ -19,7 +19,7 @@ export class LoginDialogService {
             title: 'Login!',
 
             width: '320px',
-            height: '530px',
+            height: '480px',
 
             nextShow: true,
             nextLabel: 'Login'

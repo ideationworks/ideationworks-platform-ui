@@ -8,13 +8,15 @@ import { ClipboardModule }      from 'ngx-clipboard';
 import { TruncatePipe }         from '../_lib/TruncatePipe';
 import { MaterialModule }       from './material/material.module';
 import { MdEditorComponent }    from './md-editor/md-editor.component';
+import { ButtonLoginSocialComponent } from './button-login-social/button-login-social.component';
 
 @NgModule({
 
     declarations: [
 
         MdEditorComponent,
-        TruncatePipe
+        TruncatePipe,
+        ButtonLoginSocialComponent
 
     ],
 

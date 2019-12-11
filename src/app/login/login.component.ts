@@ -9,6 +9,8 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 export class LoginComponent {
 
+    public showForgot: boolean;
+
     public formGroup: FormGroup = new FormGroup({
 
         email: new FormControl('', [
