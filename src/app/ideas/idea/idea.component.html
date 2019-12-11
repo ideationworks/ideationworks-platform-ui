@@ -1,11 +1,34 @@
+<app-search-header></app-search-header>
+
 <div class="wrapper">
 
     <div class="left">
 
+        <app-left-nav></app-left-nav>
+
+    </div>
+
+    <div class="content">
+
+        <div class="top">
+
+            <app-user-label username="mateothegreat"></app-user-label>
+
+        </div>
+
+        <div class="created">
+
+            January 1, 2019 @ 3:45 pm
+
+        </div>
+
         <div class="title">
 
-            asdf
             {{ idea?.name }}
+
+        </div>
+
+        <div class="description" [innerHtml]="idea.description">
 
         </div>
 
@@ -15,12 +38,6 @@
                                 placeholder="Tags"></ngxux-autocomplete>
 
         </div>
-
-    </div>
-
-    <div class="right">
-
-        asdf
 
     </div>
 

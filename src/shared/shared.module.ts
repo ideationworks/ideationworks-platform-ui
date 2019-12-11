@@ -6,16 +6,19 @@ import { NgProgressHttpModule }    from '@ngx-progressbar/http';
 import { NgxuxAutocompleteModule } from '@ngxux/autocomplete';
 import { NgxuxMatDialogModule }    from '@ngxux/ngxux-mat-dialog';
 import { ClipboardModule }         from 'ngx-clipboard';
+import { GravatarModule }          from 'ngx-gravatar';
 import { TruncatePipe }            from '../_lib/TruncatePipe';
 import { MaterialModule }          from './material/material.module';
 import { MdEditorComponent }       from './md-editor/md-editor.component';
+import { UserLabelComponent }      from './user-label/user-label.component';
 
 @NgModule({
 
     declarations: [
 
         MdEditorComponent,
-        TruncatePipe
+        TruncatePipe,
+        UserLabelComponent
 
     ],
 
@@ -23,6 +26,7 @@ import { MdEditorComponent }       from './md-editor/md-editor.component';
 
         ClipboardModule,
         CommonModule,
+        GravatarModule,
         ReactiveFormsModule,
 
         NgProgressModule,
@@ -51,7 +55,8 @@ import { MdEditorComponent }       from './md-editor/md-editor.component';
         MaterialModule,
 
         MdEditorComponent,
-        TruncatePipe
+        TruncatePipe,
+        UserLabelComponent
 
     ],
 

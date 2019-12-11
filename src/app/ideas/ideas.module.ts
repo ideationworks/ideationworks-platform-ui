@@ -10,6 +10,7 @@ import { PostComponent }         from './post/post.component';
 import { SearchComponent }       from './search/search.component';
 import { VoteComponent } from './vote/vote.component';
 import { SearchHeaderComponent } from './search/search-header/search-header.component';
+import { LeftNavComponent } from './left-nav/left-nav.component';
 
 @NgModule({
 
@@ -21,7 +22,8 @@ import { SearchHeaderComponent } from './search/search-header/search-header.comp
         PostComponent,
         SearchComponent,
         VoteComponent,
-        SearchHeaderComponent
+        SearchHeaderComponent,
+        LeftNavComponent
 
     ],
 

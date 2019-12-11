@@ -1,0 +1,31 @@
+<div class="wrapper">
+
+    <div class="title">Categories</div>
+
+    <ul>
+
+        <li *ngFor="let category of categories?.content"
+            routerLink="/ideas/search"
+            [queryParams]="{ categories: category.name }">
+
+            {{ category.name }}
+
+        </li>
+
+    </ul>
+
+    <div class="title">Tags</div>
+
+    <ul>
+
+        <li *ngFor="let category of categories?.content"
+            routerLink="/ideas/search"
+            [queryParams]="{ tags: category.name }">
+
+            {{ category.name }}
+
+        </li>
+
+    </ul>
+
+</div>

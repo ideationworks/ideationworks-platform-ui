@@ -1,0 +1,40 @@
+:host {
+
+    .wrapper {
+
+        width: 200px;
+
+        border-right: 1px solid #6a9ef4;
+        padding-right: 30px;
+        margin-right: 30px;
+
+        .title {
+
+            font-size: 16px;
+            color: #6a9ef4;
+
+        }
+
+        ul {
+
+            margin: 15px;
+            padding: 0 5px;
+
+            li {
+
+                padding: 2px;
+                cursor: pointer;
+                color: #ddd;
+
+                &:hover {
+
+                    color: rebeccapurple;
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -12,7 +12,13 @@ import { IdeaService }           from './idea.service';
 })
 export class IdeaComponent {
 
-    public idea: Idea;
+    public idea: Idea = {
+
+        id: '1234-a23234-arf4a3f34f3-fa34ff33f',
+        name: 'Create trello clone!',
+        description: 'asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. <br><br>asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. <br><br>asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. '
+
+    };
 
     public tags: Array<NgxuxAutocompleteItem> = [
 

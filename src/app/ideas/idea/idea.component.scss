@@ -5,14 +5,34 @@
         display: flex;
         padding: 15px;
 
-        .left {
+        .content {
 
-            flex: 1;
+            .top {
+
+                display: flex;
+                margin-bottom: 15px;
+
+            }
+
+            .created {
+
+                color: #777;
+                font-size: 12px;
+                margin-bottom: 5px;
+
+            }
 
             .title {
 
-                color: #ddd;
-                font-size: 14px;
+                color: #eee;
+                margin-bottom: 15px;
+                font-size: 20px;
+
+            }
+
+            .description {
+
+                color: #b0b0b0;
 
             }
 
@@ -26,7 +46,7 @@
 
         .right {
 
-            flex: 250px;
+            flex: 0 1 200px;
 
         }
 
