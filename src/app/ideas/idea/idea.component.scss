@@ -1,29 +1,55 @@
 :host {
-    
+
     .wrapper {
-        
+
         display: flex;
         padding: 15px;
-        
-        .left {
-            
-            flex: 1;
-            
-            .title {
-                
-                color: #ddd;
-                font-size: 14px;
-                
+
+        .content {
+
+            .top {
+
+                display: flex;
+                margin-bottom: 15px;
+
             }
-            
+
+            .created {
+
+                color: #777;
+                font-size: 12px;
+                margin-bottom: 5px;
+
+            }
+
+            .title {
+
+                color: #eee;
+                margin-bottom: 15px;
+                font-size: 20px;
+
+            }
+
+            .description {
+
+                color: #b0b0b0;
+
+            }
+
+            .tags {
+
+                margin-top: 100px;
+
+            }
+
         }
-        
+
         .right {
-            
-            flex: 250px;
-            
+
+            flex: 0 1 200px;
+
         }
-        
+
     }
-    
+
 }
