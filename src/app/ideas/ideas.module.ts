@@ -1,15 +1,17 @@
 import { CommonModule }          from '@angular/common';
 import { NgModule }              from '@angular/core';
 import { RouterModule }          from '@angular/router';
+import { DisqusModule }          from 'ngx-disqus';
 import { LMarkdownEditorModule } from 'ngx-markdown-editor';
 import { SharedModule }          from '../../shared/shared.module';
 import { CardComponent }         from './card/card.component';
 import { IdeaComponent }         from './idea/idea.component';
 import { IdeasComponent }        from './ideas.component';
+import { LeftNavComponent }      from './left-nav/left-nav.component';
 import { PostComponent }         from './post/post.component';
-import { SearchComponent }       from './search/search.component';
-import { VoteComponent } from './vote/vote.component';
 import { SearchHeaderComponent } from './search/search-header/search-header.component';
+import { SearchComponent }       from './search/search.component';
+import { VoteComponent }         from './vote/vote.component';
 
 @NgModule({
 
@@ -21,13 +23,15 @@ import { SearchHeaderComponent } from './search/search-header/search-header.comp
         PostComponent,
         SearchComponent,
         VoteComponent,
-        SearchHeaderComponent
+        SearchHeaderComponent,
+        LeftNavComponent
 
     ],
 
     imports: [
 
         CommonModule,
+        DisqusModule.forRoot('ideation-works'),
         LMarkdownEditorModule,
         SharedModule,
 
@@ -55,7 +59,7 @@ import { SearchHeaderComponent } from './search/search-header/search-header.comp
                         path: '',
                         pathMatch: 'full',
                         redirectTo: 'search'
-                        
+
                     }
 
                 ]
