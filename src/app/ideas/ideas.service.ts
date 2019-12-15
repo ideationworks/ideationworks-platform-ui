@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { APIClient }  from '../../_lib/APIClient';
-import { Pageable }   from '../../_lib/Pageable';
-import { Category }   from './category';
-import { Idea }       from './idea/idea';
+import { APIClient } from '../../_lib/APIClient';
+import { Pageable } from '../../_lib/Pageable';
+import { Category } from '../category/category';
+import { Idea } from './idea/idea';
 
 @Injectable({
     providedIn: 'root'
@@ -24,8 +24,8 @@ export class IdeasService extends APIClient<Idea> {
 
     public ideaGetById(id: string): Observable<Idea> {
 
-        return this.get(`ideas/${ id }`);
+        return this.get(`ideas/${id}`);
 
     }
-    
+
 }

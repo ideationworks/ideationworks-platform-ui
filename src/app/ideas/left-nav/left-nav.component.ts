@@ -1,8 +1,8 @@
-import { Component }     from '@angular/core';
-import { Pageable }      from '../../../_lib/Pageable';
-import { Category }      from '../category';
-import { IdeasService }  from '../ideas.service';
+import { Component } from '@angular/core';
+import { Pageable } from '../../../_lib/Pageable';
+import { Category } from '../../category/category';
 import { SearchService } from '../search/search.service';
+import { CategoryService } from '../../category/category.service';
 
 @Component({
     selector: 'app-left-nav',
@@ -13,10 +13,10 @@ export class LeftNavComponent {
 
     public categories: Pageable<Category>;
 
-    public constructor(private ideasService: IdeasService,
+    public constructor(private categoryService: CategoryService,
                        public searchService: SearchService) {
 
-        ideasService.categoriesGet().subscribe(pageable => this.categories = pageable);
+        categoryService.categoriesGet().subscribe(pageable => this.categories = pageable);
 
     }
 

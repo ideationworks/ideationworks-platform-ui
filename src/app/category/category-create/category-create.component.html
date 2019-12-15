@@ -1,0 +1,19 @@
+<ngxux-mat-dialog id="create" (nextClick)="onCreateClick()" [nextEnabled]="formGroup.valid">
+
+    <div class="wrapper">
+
+        <form [formGroup]="formGroup">
+
+            <mat-form-field>
+
+                <input matInput
+                       placeholder="Category Name"
+                       formControlName="name">
+
+            </mat-form-field>
+
+        </form>
+
+    </div>
+
+</ngxux-mat-dialog>
