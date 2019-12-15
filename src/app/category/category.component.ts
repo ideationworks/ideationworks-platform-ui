@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit }           from '@angular/core';
 import { CategoryCreateDialogService } from './category-create/category-create-dialog.service';
-import { Pageable } from '../../_lib/Pageable';
-import { Category } from './category';
-import { CategoryService } from './category.service';
+import { Pageable }                    from '../../_lib/Pageable';
+import { Category }                    from './category';
+import { CategoryService }             from './category.service';
 
 @Component({
     selector: 'app-manage',

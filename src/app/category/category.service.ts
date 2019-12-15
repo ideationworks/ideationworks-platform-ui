@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Category } from './category';
-import { APIClient } from '../../_lib/APIClient';
-import { Pageable } from '../../_lib/Pageable';
+import { Category }   from './category';
+import { APIClient }  from '../../_lib/APIClient';
+import { Pageable }   from '../../_lib/Pageable';
 import { Observable } from 'rxjs';
 
 @Injectable({

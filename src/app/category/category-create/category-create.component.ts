@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component }                          from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { CategoryService } from '../category.service';
+import { CategoryService }                    from '../category.service';
 
 @Component({
     selector: 'app-category-create',
