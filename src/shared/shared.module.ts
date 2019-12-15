@@ -27,6 +27,7 @@ import { UserLabelComponent }      from './user-label/user-label.component';
         ClipboardModule,
         CommonModule,
         GravatarModule,
+        MaterialModule,
         ReactiveFormsModule,
 
         NgProgressModule,
@@ -34,9 +35,6 @@ import { UserLabelComponent }      from './user-label/user-label.component';
 
         NgxuxAutocompleteModule,
         NgxuxMatDialogModule,
-
-        MaterialModule,
-
 
     ],
 
