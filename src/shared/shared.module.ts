@@ -28,13 +28,11 @@ import { UserLabelComponent }      from './user-label/user-label.component';
         CommonModule,
         GravatarModule,
         MaterialModule,
-        ReactiveFormsModule,
-
         NgProgressModule,
         NgProgressHttpModule,
-
         NgxuxAutocompleteModule,
         NgxuxMatDialogModule,
+        ReactiveFormsModule
 
     ],
 
@@ -43,16 +41,13 @@ import { UserLabelComponent }      from './user-label/user-label.component';
         ClipboardModule,
 
         CommonModule,
-        ReactiveFormsModule,
+        MaterialModule,
+        MdEditorComponent,
         NgProgressModule,
         NgProgressHttpModule,
-
         NgxuxAutocompleteModule,
         NgxuxMatDialogModule,
-
-        MaterialModule,
-
-        MdEditorComponent,
+        ReactiveFormsModule,
         TruncatePipe,
         UserLabelComponent
 
