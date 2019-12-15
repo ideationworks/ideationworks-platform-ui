@@ -15,6 +15,7 @@ import { LeftToolbarComponent }    from './layout/left-toolbar/left-toolbar.comp
 import { OauthModule }             from './oauth/oauth.module';
 import { ProfileModule }           from './profile/profile.module';
 import { SignupModule }            from './signup/signup.module';
+import { CategoryModule }          from './category/category.module';
 
 @NgModule({
 
@@ -26,7 +27,6 @@ import { SignupModule }            from './signup/signup.module';
         AppComponent,
         HeaderComponent,
         LeftToolbarComponent,
-
 
     ],
 
@@ -61,6 +61,7 @@ import { SignupModule }            from './signup/signup.module';
         ]),
         SharedModule,
         SignupModule,
+        CategoryModule,
         ToastrModule.forRoot({
 
             timeOut: 5000,
