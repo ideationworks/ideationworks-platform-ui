@@ -50,7 +50,7 @@ export class IdeaComponent implements OnInit {
 
     public ngOnInit() {
 
-        this.socialShareDialogService.open('asdfasdfasdfs share me yo');
+        // this.socialShareDialogService.open('asdfasdfasdfs share me yo');
 
     }
 

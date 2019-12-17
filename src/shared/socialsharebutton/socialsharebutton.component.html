@@ -1,17 +1,14 @@
 <div class="wrapper">
 
-    <div class="button">
+    <div class="buttons">
 
-        <button (click)="socialShareDialogService.open(message)" mat-stroked-button>
+        <div *ngFor="let asdf of icons"
+             class="button"
+             (click)="socialShareDialogService.open(message)">
 
-            share...
+            <i [class]="asdf.icon"></i>
 
-        </button>
-
-    </div>
-
-    <div class="mat-button">
-
+        </div>
 
     </div>
 

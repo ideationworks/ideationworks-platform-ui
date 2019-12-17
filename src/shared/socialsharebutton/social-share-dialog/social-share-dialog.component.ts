@@ -8,21 +8,6 @@ import {SocialShareService} from './social-share.service';
 })
 export class SocialShareDialogComponent {
 
-    public icons: Array<any> = [
-
-        {
-            icon: 'fab fa-Twitter',
-            label: 'Twitter'
-        },
-
-        {
-
-            icon: 'fab fa-instagram',
-            label: 'Instagram',
-
-        }
-
-    ];
 
     public constructor(public socialShareService: SocialShareService) {
 
@@ -32,7 +17,7 @@ export class SocialShareDialogComponent {
     public onNextClick(): void {
 
         window.open('https://twitter.com/intent/tweet?url=test');
-
+        window.open(' https://www.facebook.com/dialog/share?');
     }
 
 }
