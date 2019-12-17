@@ -12,9 +12,10 @@
             .left {
 
                 flex: 1;
-
+                padding: 15px;
+                margin: 15px;
                 font-size: 20px;
-                color: white;
+                color: #6F69AF;
 
             }
 
@@ -29,17 +30,20 @@
 
         .left {
 
+
             flex: 0 1 300px;
             color: white;
+            margin: 15px;
+
+            .title {
+
+                font-size: 18px;
+                margin-bottom: 20px;
+
+            }
 
         }
 
-        .right {
-
-            border-left: 1px solid #6a9ef4;
-            padding-left: 30px;
-
-        }
     }
 
 }

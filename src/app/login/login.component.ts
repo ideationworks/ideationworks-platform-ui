@@ -1,5 +1,9 @@
 import {Component} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {AuthenticationService} from '../../_lib/AuthenticationService';
+import {ToastrService} from 'ngx-toastr';
+import {NgxuxMatDialogService} from '@ngxux/ngxux-mat-dialog';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-login',
@@ -30,15 +34,29 @@ export class LoginComponent {
 
     });
 
-    public constructor() {
+    public constructor(private authenticationService: AuthenticationService,
+                       private toastrService: ToastrService,
+                       private ngxuxMatDialogService: NgxuxMatDialogService,
+                       private router: Router) {
 
     }
 
+    public onSubmitClick() {
 
-    onSubmitClick() {
-        console.log(this.formGroup.value);
-        console.log(this.formGroup.valid);
+        this.toastrService.success('Welcome back!');
+
+        this.ngxuxMatDialogService.close('login');
+
+        this.router.navigate(['/ideas']);
+
+        // this.authenticationService.login(this.formGroup.get('email').value, this.formGroup.get('password').value).subscribe(result => {
+
+        //     console.log(result);
+
+        // });
+
     }
+
 }
 
 

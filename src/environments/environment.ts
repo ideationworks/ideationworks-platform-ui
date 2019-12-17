@@ -4,7 +4,8 @@
 
 export const environment = {
     production: false,
-    API_BASE: 'http://localhost:18080'
+    //API_BASE: 'http://localhost:18080'
+    API_BASE: 'https://api.ideation.works'
 };
 
 /*

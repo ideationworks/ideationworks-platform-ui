@@ -1,21 +1,19 @@
-import { Component }     from '@angular/core';
-import { Pageable }      from '../../../_lib/Pageable';
-import { Category }      from '../category';
-import { Idea }          from '../idea/idea';
-import { IdeasService }  from '../ideas.service';
-import { SearchService } from './search.service';
+import {Component} from '@angular/core';
+import {Idea} from '../idea/idea';
+import {IdeasService} from '../ideas.service';
+import {SearchService} from './search.service';
 
 @Component({
     selector: 'app-search',
     templateUrl: './search.component.html',
-    styleUrls: [ './search.component.scss' ]
+    styleUrls: ['./search.component.scss']
 })
 export class SearchComponent {
 
     public ideas: Array<Idea> = [
 
         {
-
+            shareMessage: 'sldjflsd',
             id: 'test',
             name: 'test idea 1',
             description: 'asdfasdf asd fasdf asdfasd asdf asdf asdfasdf'
@@ -24,12 +22,9 @@ export class SearchComponent {
 
     ];
 
-    public categories: Pageable<Category>;
-
     public constructor(private ideasService: IdeasService,
                        public searchService: SearchService) {
 
-        ideasService.categoriesGet().subscribe(pageable => this.categories = pageable);
 
     }
 

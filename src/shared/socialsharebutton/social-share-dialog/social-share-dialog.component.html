@@ -1,0 +1,23 @@
+<ngxux-mat-dialog id="Social" (nextClick)="onNextClick()" [nextEnabled]="true">
+
+    <div class="wrapper p-20">
+
+        <h1> Sup Bros!</h1>
+
+        <mat-form-field>
+
+            <textarea placeholder="Edit..." matInput
+                      formControlName="message"
+                      [value]="socialShareService?.message"></textarea>
+
+        </mat-form-field>
+
+        <div *ngFor="let icon of icons">
+
+            <mat-checkbox>{{icon.label}}</mat-checkbox>
+
+        </div>
+
+    </div>
+
+</ngxux-mat-dialog>

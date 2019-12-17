@@ -1,0 +1,71 @@
+
+.wrapper {
+
+    padding: 20px;
+
+    .login {
+
+        .right {
+
+            text-align: right;
+
+        }
+
+        .message {
+
+            margin-bottom: 20px;
+
+        }
+
+        .mat-button {
+
+            flex: fit-content;
+            text-align: right;
+
+        }
+    }
+
+    a {
+
+        cursor: pointer;
+        font-size: 15px;
+
+        &:hover {
+
+            color: rebeccapurple;
+
+        }
+
+    }
+
+    mat-form-field {
+
+        width: 100%;
+
+    }
+
+    .header {
+
+        justify-content: space-between;
+        align-items: center;
+        //padding: 15px;
+
+        .left {
+            flex: 1;
+            font-size: 20px;
+            color: #6F69AF;
+
+        }
+
+    }
+
+    .contact {
+
+        padding: 15px;
+
+    }
+
+}
+
+
+

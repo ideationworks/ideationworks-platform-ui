@@ -12,7 +12,17 @@
 
         <div class="top">
 
-            <app-user-label username="mateothegreat"></app-user-label>
+            <div class="left">
+
+                <app-user-label username="mateothegreat"></app-user-label>
+
+            </div>
+
+            <div class="right">
+
+                <app-socialsharebutton [message]="idea.shareMessage"></app-socialsharebutton>
+
+            </div>
 
         </div>
 
@@ -28,7 +38,7 @@
 
         </div>
 
-        <div class="description" [innerHtml]="idea.description">
+        <div class="description" [innerHtml]="idea?.description">
 
         </div>
 
