@@ -9,7 +9,7 @@ export class SocialLoginButtonComponent implements OnInit {
 
     @Input() public type: string;
 
-    private currentType;
+    public currentType;
     public types = [
 
         {
