@@ -1,0 +1,106 @@
+<ngxux-mat-dialog id="login"
+                  [nextEnabled]="formGroup.valid"
+                  (nextClick)="onSubmitClick()">
+
+    <div class="wrapper">
+
+        <div *ngIf="!showForgot" class="login">
+
+            <div class="message">
+
+                Welcome to Ideation Works!<br>
+
+                <p>If you do not have an account<br> click here!</p>
+
+            </div>
+
+            <form [formGroup]="formGroup">
+
+                <div>
+
+                    <mat-form-field>
+
+                        <label>
+
+                            <input matInput
+                                   placeholder="Email Address"
+                                   formControlName="email">
+
+                        </label>
+
+
+                    </mat-form-field>
+
+                </div>
+
+                <div>
+
+                    <mat-form-field>
+
+                        <label>
+
+                            <input matInput
+                                   placeholder="Password"
+                                   type="password"
+                                   formControlName="password">
+
+                        </label>
+
+                    </mat-form-field>
+
+                </div>
+
+            </form>
+
+            <div class="social">
+
+                <app-social-login-button type="Google"></app-social-login-button>
+
+            </div>
+
+            <div class="right">
+
+                <a (click)="showForgot = true">Forgot Password?</a>
+
+            </div>
+
+
+        </div>
+
+        <div *ngIf="showForgot" class="forgot">
+
+            Forgot Password?
+
+            <form [formGroup]="formGroup">
+
+                <div>
+
+                    <mat-form-field>
+
+                        <label>
+
+                            <input matInput
+                                   placeholder="Email Address"
+                                   formControlName="email">
+
+                        </label>
+
+                    </mat-form-field>
+
+                </div>
+
+            </form>
+
+            <div class="left">
+
+                <a (click)="showForgot = false;">Go back to login page</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</ngxux-mat-dialog>
+

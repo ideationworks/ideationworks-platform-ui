@@ -1,0 +1,37 @@
+:host {
+
+    .wrapper {
+
+        .buttons {
+
+            display: flex;
+            color: white;
+
+
+            .button {
+
+                cursor: pointer;
+                margin: 10px;
+
+                &:hover {
+
+                    color: rebeccapurple;
+
+                }
+
+                svg {
+
+                    font-size: 30px;
+
+                }
+
+
+            }
+
+
+        }
+
+    }
+
+
+}

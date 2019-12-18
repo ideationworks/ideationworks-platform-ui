@@ -1,24 +1,19 @@
-import { Component }             from '@angular/core';
-import { ActivatedRoute }        from '@angular/router';
-import { NgxuxAutocompleteItem } from '@ngxux/autocomplete';
-import { IdeasService }          from '../ideas.service';
-import { Idea }                  from './idea';
-import { IdeaService }           from './idea.service';
+import { Component, OnInit }        from '@angular/core';
+import { ActivatedRoute }           from '@angular/router';
+import { NgxuxAutocompleteItem }    from '@ngxux/autocomplete';
+import { SocialShareDialogService } from '../../../shared/social/social-share-dialog/social-share-dialog.service';
+import { IdeasService }             from '../ideas.service';
+import { Idea }                     from './idea';
+import { IdeaService }              from './idea.service';
 
 @Component({
     selector: 'app-idea',
     templateUrl: './idea.component.html',
     styleUrls: [ './idea.component.scss' ]
 })
-export class IdeaComponent {
+export class IdeaComponent implements OnInit {
 
-    public idea: Idea = {
-
-        id: '1234-a23234-arf4a3f34f3-fa34ff33f',
-        name: 'Create trello clone!',
-        description: 'asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. <br><br>asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. <br><br>asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. asdf asdf asdfasf as dfsadfasfa asdfasdfasdf. '
-
-    };
+    public idea: Idea;
 
     public tags: Array<NgxuxAutocompleteItem> = [
 
@@ -30,7 +25,10 @@ export class IdeaComponent {
 
     public constructor(private ideasService: IdeasService,
                        private ideaService: IdeaService,
+                       private socialShareDialogService: SocialShareDialogService,
                        private route: ActivatedRoute) {
+
+        this.idea = this.ideaService.testIdea;
 
         route.params.subscribe(params => {
 
@@ -47,6 +45,12 @@ export class IdeaComponent {
             }
 
         });
+
+    }
+
+    public ngOnInit() {
+
+        // this.socialShareDialogService.open('asdfasdfasdfs share me yo');
 
     }
 

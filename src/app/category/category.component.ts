@@ -1,7 +1,7 @@
 import { Component, OnInit }           from '@angular/core';
-import { CategoryCreateDialogService } from './category-create/category-create-dialog.service';
+import { Category }                    from '../../_lib/category';
 import { Pageable }                    from '../../_lib/Pageable';
-import { Category }                    from './category';
+import { CategoryCreateDialogService } from './category-create/category-create-dialog.service';
 import { CategoryService }             from './category.service';
 
 @Component({

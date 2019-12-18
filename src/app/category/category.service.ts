@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Category }   from './category';
-import { APIClient }  from '../../_lib/APIClient';
-import { Pageable }   from '../../_lib/Pageable';
 import { Observable } from 'rxjs';
+import { APIClient }  from '../../_lib/APIClient';
+import { Category }   from '../../_lib/category';
+import { Pageable }   from '../../_lib/Pageable';
 
 @Injectable({
     providedIn: 'root'

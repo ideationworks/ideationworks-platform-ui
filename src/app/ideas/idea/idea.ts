@@ -5,5 +5,6 @@ export class Idea {
     public stampUpdated?: string;
     public name: string;
     public description: string;
+    public shareMessage: string;
 
 }

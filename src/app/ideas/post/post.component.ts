@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit }                  from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import * as marked from 'marked';
-import { ToastrService } from 'ngx-toastr';
-import { Pageable } from '../../../_lib/Pageable';
-import { Category } from '../../category/category';
-import { IdeasService } from '../ideas.service';
+import * as marked                            from 'marked';
+import { ToastrService }                      from 'ngx-toastr';
+import { Category }                           from '../../../_lib/category';
+import { Pageable }                           from '../../../_lib/Pageable';
+import { IdeasService }                       from '../ideas.service';
 
 @Component({
     selector: 'app-post',

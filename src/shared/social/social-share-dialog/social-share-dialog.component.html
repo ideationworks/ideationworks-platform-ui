@@ -1,0 +1,18 @@
+<ngxux-mat-dialog id="social-share"
+                  (nextClick)="onNextClick()"
+                  [nextEnabled]="true">
+
+    <div class="wrapper">
+
+        <h1>Share</h1>
+
+        <mat-form-field>
+
+            <textarea placeholder="Edit your message..." matInput
+                      [value]="socialShareService.message"></textarea>
+
+        </mat-form-field>
+
+    </div>
+
+</ngxux-mat-dialog>

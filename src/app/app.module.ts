@@ -12,10 +12,10 @@ import { HomeComponent }           from './home/home.component';
 import { IdeasModule }             from './ideas/ideas.module';
 import { HeaderComponent }         from './layout/header/header.component';
 import { LeftToolbarComponent }    from './layout/left-toolbar/left-toolbar.component';
+import { LoginComponent }          from './login/login.component';
 import { OauthModule }             from './oauth/oauth.module';
 import { ProfileModule }           from './profile/profile.module';
 import { SignupModule }            from './signup/signup.module';
-import { CategoryModule }          from './category/category.module';
 
 @NgModule({
 
@@ -23,7 +23,7 @@ import { CategoryModule }          from './category/category.module';
 
         AboutComponent,
         HomeComponent,
-
+        LoginComponent,
         AppComponent,
         HeaderComponent,
         LeftToolbarComponent,
@@ -61,7 +61,6 @@ import { CategoryModule }          from './category/category.module';
         ]),
         SharedModule,
         SignupModule,
-        CategoryModule,
         ToastrModule.forRoot({
 
             timeOut: 5000,
@@ -72,6 +71,12 @@ import { CategoryModule }          from './category/category.module';
             closeButton: true
 
         }),
+
+    ],
+
+    entryComponents: [
+
+        LoginComponent
 
     ],
 

@@ -12,7 +12,17 @@
 
         <div class="top">
 
-            <app-user-label username="mateothegreat"></app-user-label>
+            <div class="left">
+
+                <app-user-label username="mateothegreat"></app-user-label>
+
+            </div>
+
+            <div class="right">
+
+                <app-social-share-buttons [message]="idea.shareMessage"></app-social-share-buttons>
+
+            </div>
 
         </div>
 
@@ -28,7 +38,7 @@
 
         </div>
 
-        <div class="description" [innerHtml]="idea.description">
+        <div class="description" [innerHtml]="idea?.description">
 
         </div>
 
@@ -41,7 +51,6 @@
 
         <div class="comments">
 
-            <disqus [identifier]="'/test'"></disqus>
 
         </div>
 
