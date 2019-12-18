@@ -19,7 +19,7 @@ export class PostDialogService {
             title: 'Post new idea!',
 
             width: '800px',
-            height: '770px',
+            height: '920px',
 
             nextShow: true,
             nextLabel: 'Post'

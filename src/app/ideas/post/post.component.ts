@@ -1,5 +1,6 @@
 import { Component, OnInit }                  from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { NgxuxAutocompleteItem }              from '@ngxux/autocomplete';
 import * as marked                            from 'marked';
 import { ToastrService }                      from 'ngx-toastr';
 import { Category }                           from '../../../_lib/category';
@@ -12,6 +13,14 @@ import { IdeasService }                       from '../ideas.service';
     styleUrls: [ './post.component.scss' ]
 })
 export class PostComponent implements OnInit {
+
+    public tags: Array<NgxuxAutocompleteItem> = [
+
+        { label: 'angular' },
+        { label: 'typescript' },
+        { label: 'javascript' },
+
+    ];
 
     public compiledMarkdown: string;
     public startingValue = '';
