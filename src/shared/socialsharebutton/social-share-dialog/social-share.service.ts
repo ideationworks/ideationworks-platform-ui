@@ -5,7 +5,7 @@ import {Injectable} from '@angular/core';
 })
 export class SocialShareService {
 
+    public icon: any;
     public message: string;
-    public username: string;
 
 }

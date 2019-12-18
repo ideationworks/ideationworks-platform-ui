@@ -2,11 +2,11 @@
 
     <div class="buttons">
 
-        <div *ngFor="let asdf of icons"
+        <div *ngFor="let icon of icons"
              class="button"
-             (click)="socialShareDialogService.open(message)">
+             (click)="onShareClick(icon)">
 
-            <i [class]="asdf.icon"></i>
+            <i [class]="icon.icon"></i>
 
         </div>
 

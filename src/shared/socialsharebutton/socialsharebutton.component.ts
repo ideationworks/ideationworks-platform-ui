@@ -18,5 +18,11 @@ export class SocialsharebuttonComponent {
 
     }
 
+    public onShareClick(icon: any): void {
+
+        this.socialShareDialogService.open(icon, this.message);
+
+    }
+
 
 }
