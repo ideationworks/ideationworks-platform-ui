@@ -26,12 +26,31 @@
     .content {
 
         display: flex;
+        flex-direction: row;
         padding: 15px;
 
-        .left {
+        .mat-form-field-flex {
+
+            color: white;
+
+            .heading {
+
+                display: flex;
+
+                p {
+
+                    margin-right: 25px;
+
+                }
+
+            }
+
+        }
+
+        .right {
 
 
-            flex: 0 1 300px;
+            //flex: 0 1 300px;
             color: white;
             margin: 15px;
 
@@ -42,6 +61,31 @@
 
             }
 
+            .form {
+
+                width: 500px;
+
+            }
+
+
+            .pleasework {
+
+                text-align: right;
+
+            }
+
+
+        }
+
+        .right {
+
+            img {
+
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+
+            }
         }
 
     }
