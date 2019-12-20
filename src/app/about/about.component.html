@@ -1,24 +1,63 @@
 <div class="wrapper">
 
-    <div class="header">
+    <div class="left">
 
-        <div class="left">
+        <div class="header">
 
             About
 
         </div>
 
+        <!-- Info -->
 
-        <div class="right">
+        <div class="info">
+            <div class="row">
+                <h2>Post</h2>
+                <p>Post your ideas</p>
+            </div>
 
+            <div class="row">
+                <h2>Inspire</h2>
+                <p>Show off your<br> ideas(or steal someone elses)</p>
+            </div>
+
+            <div class="row">
+                <h2>Share</h2>
+                <p>Share it to the world</p>
+            </div>
 
         </div>
 
+        <!-- End of Info -->
+
+        <!-- Images -->
+
+        <div class="flex-container">
+
+            <div>
+                <img src="https://managepeopleright.com/wp-content/uploads/2018/07/dramaV1-min.jpg"
+                     alt="dramatic blonde">
+            </div>
+
+            <div>
+                <img src="https://i.pinimg.com/originals/c3/94/78/c39478767fa83a4e6203e8a8eac7fad7.jpg"
+                     alt="man smoking">
+            </div>
+
+        </div>
+
+        <!-- End of Images -->
+
+        <!-- End of Left Div -->
+
     </div>
 
-    <div class="content">
 
-        <div class="left">
+    <!-- Beginning of Right Div --->
+
+    <div class="right">
+
+        <div class="contact">
 
             <div class="title">
 
@@ -26,49 +65,48 @@
 
             </div>
 
-            <div class="contact">
+            <form [formGroup]="formGroup">
 
-                <form [formGroup]="formGroup">
+                <div>
 
-                    <div>
+                    <mat-form-field>
 
-                        <mat-form-field>
+                        <input matInput
+                               formControlName="name"
+                               placeholder="Your Name">
 
-                            <input matInput
-                                   formControlName="name"
-                                   placeholder="Your Name">
+                    </mat-form-field>
 
-                        </mat-form-field>
+                </div>
 
-                    </div>
+                <div>
 
-                    <div>
+                    <mat-form-field>
 
-                        <mat-form-field>
+                        <input matInput
+                               formControlName="email"
+                               placeholder="Your Email">
 
-                            <input matInput
-                                   formControlName="email"
-                                   placeholder="Your Email">
+                    </mat-form-field>
 
-                        </mat-form-field>
+                </div>
 
-                    </div>
+                <div>
 
-                    <div>
-
-                        <mat-form-field>
+                    <mat-form-field>
 
                 <textarea matInput
                           formControlName="message"
                           placeholder="Write a Message">
-
                 </textarea>
 
-                        </mat-form-field>
+                    </mat-form-field>
 
-                    </div>
+                </div>
 
-                </form>
+            </form>
+
+            <div class="pleasework">
 
                 <button mat-raised-button
 
@@ -83,5 +121,7 @@
         </div>
 
     </div>
+
+    <!-- End of Right Div -->
 
 </div>

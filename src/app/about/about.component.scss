@@ -2,90 +2,71 @@
 
     .wrapper {
 
-        .header {
+        font-size: 20px;
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #6F69AF;
+        .left {
 
-            .left {
+            .header {
 
-                flex: 1;
-                padding: 15px;
-                margin: 15px;
-                font-size: 20px;
+                display: flex;
                 color: #6F69AF;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 2px solid #6F69AF;
+                padding: 15px;
 
             }
 
-        }
-
-    }
-
-    .content {
-
-        display: flex;
-        flex-direction: row;
-        padding: 15px;
-
-        .mat-form-field-flex {
-
-            color: white;
-
-            .heading {
+            .info {
 
                 display: flex;
+                flex-direction: row;
+                flex-grow: initial;
+                padding: 15px;
+                color: white;
 
-                p {
+                h2 {
 
-                    margin-right: 25px;
+                    font-size: 20px;
 
                 }
 
             }
 
+            .flex-container {
+
+                display: flex;
+
+                img {
+
+                    padding: 15px;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+
+
+                }
+
+            }
+
+
         }
 
         .right {
 
-
-            //flex: 0 1 300px;
             color: white;
-            margin: 15px;
+            position: absolute;
+            right: 0;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
 
-            .title {
+            .contact {
 
-                font-size: 18px;
-                margin-bottom: 20px;
-
-            }
-
-            .form {
-
-                width: 500px;
 
             }
 
 
-            .pleasework {
-
-                text-align: right;
-
-            }
-
-
-        }
-
-        .right {
-
-            img {
-
-                border-radius: 50%;
-                width: 100px;
-                height: 100px;
-
-            }
         }
 
     }
