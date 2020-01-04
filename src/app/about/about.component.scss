@@ -1,8 +1,10 @@
+
 :host {
 
     .wrapper {
 
         font-size: 20px;
+
 
         .left {
 
@@ -10,20 +12,52 @@
 
                 display: flex;
                 color: #6F69AF;
-                justify-content: space-between;
-                align-items: center;
                 border-bottom: 2px solid #6F69AF;
                 padding: 15px;
 
             }
 
-            .info {
+            .contact {
 
                 display: flex;
                 flex-direction: row;
-                flex-grow: initial;
-                padding: 15px;
+                justify-content: flex-end;
+                width: 100%;
+                position: relative;
                 color: white;
+                margin-top: 15px;
+
+                mat-form-field {
+
+                    width: 300px;
+                    padding-right: 15px;
+
+                }
+
+
+                textarea {
+
+                    background: rgba(196, 196, 196, 0.1);
+
+
+                    .placeholder {
+
+                        font-size: 10px;
+
+                    }
+
+                }
+
+            }
+
+            //Beginning of contact css
+
+            .info {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: row;
+                color: white;
+                padding: 15px;
 
                 h2 {
 
@@ -31,11 +65,29 @@
 
                 }
 
+                p {
+
+                    font-weight: normal;
+                    margin-right: 100px;
+                    text-align: left;
+                    color: rgba(203, 203, 203, 0.87);
+
+                }
+
             }
+
 
             .flex-container {
 
-                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                .title {
+                    padding-left: 15px;
+                    color: white;
+                    margin-top: 15px;
+                }
+
 
                 img {
 
@@ -49,26 +101,19 @@
 
             }
 
+            .video {
 
-        }
-
-        .right {
-
-            color: white;
-            position: absolute;
-            right: 0;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-
-            .contact {
-
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
 
             }
 
 
         }
 
+
     }
 
 }
+

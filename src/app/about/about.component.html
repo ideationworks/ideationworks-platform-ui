@@ -18,7 +18,7 @@
 
             <div class="row">
                 <h2>Inspire</h2>
-                <p>Show off your<br> ideas(or steal someone elses)</p>
+                <p>Show off your ideas (or steal someone elses)</p>
             </div>
 
             <div class="row">
@@ -26,102 +26,114 @@
                 <p>Share it to the world</p>
             </div>
 
+            <div class="video">
+
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/Nym_-DNB42s" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+            </div>
+
+            <div class="contact">
+
+                <form [formGroup]="formGroup">
+
+                    <div class="title">
+
+                        Drop us a line
+
+                    </div>
+
+                    <div>
+
+                        <mat-form-field>
+
+                            <input matInput
+                                   formControlName="name"
+                                   placeholder="Your Name">
+
+                        </mat-form-field>
+
+                    </div>
+
+                    <div>
+
+                        <mat-form-field>
+
+                            <input matInput
+                                   formControlName="email"
+                                   placeholder="Your Email">
+
+                        </mat-form-field>
+
+                    </div>
+
+                    <div>
+
+                        <mat-form-field>
+
+                            <textarea matInput
+                                      formControlName="message"
+                                      placeholder="Write a Message">
+                            </textarea>
+
+                        </mat-form-field>
+
+                    </div>
+
+                    <div class="pleasework">
+
+                        <button mat-raised-button
+
+                                color="warn"
+                                (click)="onSubmitClick()"
+                                [disabled]="!formGroup.valid">Submit
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
         </div>
 
-        <!-- End of Info -->
+        <!--End of Contact-->
 
         <!-- Images -->
 
         <div class="flex-container">
 
-            <div>
-                <img src="https://managepeopleright.com/wp-content/uploads/2018/07/dramaV1-min.jpg"
-                     alt="dramatic blonde">
+            <div class="title">
+
+                Creators
+
             </div>
 
-            <div>
+            <a href="https://github.com/lydi-alpine">
+                <img
+                    src="https://managepeopleright.com/wp-content/uploads/2018/07/dramaV1-min.jpg"
+                    alt="dramatic blonde"></a>
+
+            <a href="https://github.com/mateothegreat">
                 <img src="https://i.pinimg.com/originals/c3/94/78/c39478767fa83a4e6203e8a8eac7fad7.jpg"
                      alt="man smoking">
-            </div>
+            </a>
+
+            <a href="https://github.com/rw3iss">
+                <img
+                    src="https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png"
+                    alt="excited man">
+            </a>
 
         </div>
+
 
         <!-- End of Images -->
 
         <!-- End of Left Div -->
 
     </div>
-
-
-    <!-- Beginning of Right Div --->
-
-    <div class="right">
-
-        <div class="contact">
-
-            <div class="title">
-
-                Drop us a line
-
-            </div>
-
-            <form [formGroup]="formGroup">
-
-                <div>
-
-                    <mat-form-field>
-
-                        <input matInput
-                               formControlName="name"
-                               placeholder="Your Name">
-
-                    </mat-form-field>
-
-                </div>
-
-                <div>
-
-                    <mat-form-field>
-
-                        <input matInput
-                               formControlName="email"
-                               placeholder="Your Email">
-
-                    </mat-form-field>
-
-                </div>
-
-                <div>
-
-                    <mat-form-field>
-
-                <textarea matInput
-                          formControlName="message"
-                          placeholder="Write a Message">
-                </textarea>
-
-                    </mat-form-field>
-
-                </div>
-
-            </form>
-
-            <div class="pleasework">
-
-                <button mat-raised-button
-
-                        color="warn"
-                        (click)="onSubmitClick()"
-                        [disabled]="!formGroup.valid">Submit
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- End of Right Div -->
 
 </div>
