@@ -1,10 +1,10 @@
-import { Component }                          from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import {Component} from '@angular/core';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
     selector: 'app-about',
     templateUrl: './about.component.html',
-    styleUrls: [ './about.component.scss' ]
+    styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
 
@@ -31,5 +31,6 @@ export class AboutComponent {
         console.log(this.formGroup.valid);
 
     }
+    
 
 }
