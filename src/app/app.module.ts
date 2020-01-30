@@ -16,8 +16,8 @@ import {LoginComponent} from './login/login.component';
 import {OauthModule} from './oauth/oauth.module';
 import {ProfileModule} from './profile/profile.module';
 import {SignupModule} from './signup/signup.module';
-import {ContactcomponentComponent} from './about/contactcomponent/contactcomponent.component';
 import {ContactUsDialogComponent} from './about/contact-us-dialog/contact-us-dialog.component';
+
 
 @NgModule({
 
@@ -29,7 +29,6 @@ import {ContactUsDialogComponent} from './about/contact-us-dialog/contact-us-dia
         AppComponent,
         HeaderComponent,
         LeftToolbarComponent,
-        ContactcomponentComponent,
         ContactUsDialogComponent,
 
     ],
@@ -80,7 +79,8 @@ import {ContactUsDialogComponent} from './about/contact-us-dialog/contact-us-dia
 
     entryComponents: [
 
-        LoginComponent
+        LoginComponent,
+        ContactUsDialogComponent,
 
     ],
 

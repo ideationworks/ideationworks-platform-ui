@@ -5,74 +5,24 @@
 
         font-size: 20px;
 
+        .header {
+
+            display: flex;
+            color: #6F69AF;
+            border-bottom: 2px solid #6F69AF;
+            padding: 15px;
+
+        }
+
+        .walkingman {
+            display: flex;
+            float: right;
+            margin: 15px;
+            padding-top: 20px;
+
+        }
 
         .left {
-
-            .header {
-
-                display: flex;
-                color: #6F69AF;
-                border-bottom: 2px solid #6F69AF;
-                padding: 15px;
-
-            }
-
-            button {
-
-                position: absolute;
-                width: 192px;
-                height: 40px;
-                background: none;
-                border: 1px solid rebeccapurple;
-                border-radius: 6px;
-                font: inherit;
-
-                color: rgba(255, 255, 255, 0.87);
-                font-size: 12px;
-                font-weight: 700;
-                margin-top: 15px;
-
-
-            }
-
-            .contact {
-
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                width: 100%;
-                position: relative;
-                color: white;
-                margin-top: 15px;
-
-                mat-form-field {
-
-                    width: 300px;
-                    padding-right: 15px;
-
-                }
-
-
-                textarea {
-
-
-                    .placeholder {
-
-                        font-size: 10px;
-
-                    }
-
-                }
-
-                .walkingman {
-
-                    float: right;
-
-                }
-
-            }
-
-            //Beginning of contact css
 
             .info {
                 display: flex;
@@ -80,10 +30,6 @@
                 flex-direction: row;
                 color: rgba(203, 203, 203, 0.87);
                 padding: 15px;
-
-                h1 {
-
-                }
 
                 h2 {
 
@@ -95,36 +41,64 @@
                     font-weight: lighter;
                     margin-right: 100px;
                     text-align: left;
+
                     color: #EEEEEE;
+                    justify-content: space-evenly;
 
                 }
+            }
+
+            button {
+
+                flex-direction: row;
+                justify-content: center;
+                width: 192px;
+                height: 40px;
+                background: none;
+                border: 2px solid #6F69AF;
+                border-radius: 6px;
+                font: inherit;
+                color: rgba(255, 255, 255, 0.87);
+                font-size: 12px;
+                font-weight: 700;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
 
             }
 
-            //.title {
-            //    display: flex;
-            //    flex-direction: row;
-            //    justify-content: center;
-            //    padding-left: 15px;
-            //    color: rebeccapurple;
-            //    margin-top: 15px;
-            //}
+            button:hover {
 
+                background-color: #6F69AF;
+                color: black;
+                cursor: pointer;
 
-            .flex-container {
+            }
+        }
+
+        .right {
+
+        }
+
+        .flex-wrap {
+
+            .title {
 
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                padding-left: 15px;
+                color: rgba(203, 203, 203, 0.87);
+                margin-top: 45px;
 
+                h1 {
 
+                    padding-left: 15px;
+                    color: rgba(203, 203, 203, 0.87);
+                    margin-top: 45px;
+
+                }
             }
-
-
         }
-
-
     }
-
 }
 
