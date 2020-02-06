@@ -1,11 +1,11 @@
 import {Injectable} from '@angular/core';
 import {NgxuxMatDialogService, NgxuxMatDialogSettings} from '@ngxux/ngxux-mat-dialog';
-import {LoginComponent} from './login.component';
+import {PasswordComponent} from './password.component';
 
 @Injectable({
     providedIn: 'root'
 })
-export class LoginDialogService {
+export class PasswordDialogService {
 
     public constructor(private ngxuxMatDialogService: NgxuxMatDialogService) {
 
@@ -13,16 +13,16 @@ export class LoginDialogService {
 
     public open(): void {
 
-        this.ngxuxMatDialogService.open(LoginComponent, new NgxuxMatDialogSettings({
+        this.ngxuxMatDialogService.open(PasswordComponent, new NgxuxMatDialogSettings({
 
-            id: 'login',
-            title: 'Login!',
+            id: 'password',
+            title: 'Change your Password!',
 
             width: '320px',
-            height: '550px',
+            height: '530px',
 
             nextShow: true,
-            nextLabel: 'Login'
+            nextLabel: 'Submit'
 
         }));
 
@@ -30,7 +30,7 @@ export class LoginDialogService {
 
     public close(): void {
 
-        this.ngxuxMatDialogService.close('signup');
+        this.ngxuxMatDialogService.close('password');
 
     }
 

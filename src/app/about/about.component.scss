@@ -1,49 +1,104 @@
+
 :host {
 
     .wrapper {
 
+        font-size: 20px;
+
         .header {
 
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            color: #6F69AF;
             border-bottom: 2px solid #6F69AF;
-
-            .left {
-
-                flex: 1;
-                padding: 15px;
-                margin: 15px;
-                font-size: 20px;
-                color: #6F69AF;
-
-            }
+            padding: 15px;
 
         }
 
-    }
+        .walkingman {
+            display: flex;
+            float: right;
+            margin: 15px;
+            padding-top: 20px;
 
-    .content {
-
-        display: flex;
-        padding: 15px;
+        }
 
         .left {
 
+            .info {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: row;
+                color: rgba(203, 203, 203, 0.87);
+                padding: 15px;
 
-            flex: 0 1 300px;
-            color: white;
-            margin: 15px;
+                h2 {
 
-            .title {
+                    font-size: 20px;
 
-                font-size: 18px;
-                margin-bottom: 20px;
+                }
+
+                p {
+                    font-weight: lighter;
+                    margin-right: 100px;
+                    text-align: left;
+
+                    color: #EEEEEE;
+                    justify-content: space-evenly;
+
+                }
+            }
+
+            button {
+
+                flex-direction: row;
+                justify-content: center;
+                width: 192px;
+                height: 40px;
+                background: none;
+                border: 2px solid #6F69AF;
+                border-radius: 6px;
+                font: inherit;
+                color: rgba(255, 255, 255, 0.87);
+                font-size: 12px;
+                font-weight: 700;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
 
             }
 
+            button:hover {
+
+                background-color: #6F69AF;
+                color: black;
+                cursor: pointer;
+
+            }
         }
 
-    }
+        .right {
 
+        }
+
+        .flex-wrap {
+
+            .title {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding-left: 15px;
+                color: rgba(203, 203, 203, 0.87);
+                margin-top: 45px;
+
+                h1 {
+
+                    padding-left: 15px;
+                    color: rgba(203, 203, 203, 0.87);
+                    margin-top: 45px;
+
+                }
+            }
+        }
+    }
 }
+

@@ -10,7 +10,7 @@
 
         <div class="right">
 
-            <button mat-stroked-button color="accent">CHANGE PASSWORD</button>
+            <button (click)="passwordDialogService.open()" mat-stroked-button color="accent">CHANGE PASSWORD</button>
 
         </div>
 
@@ -22,7 +22,7 @@
 
             <ul>
 
-                <li routerLink="/profile/password">Change Password</li>
+                <li (click)="passwordDialogService.open()">Change Password</li>
                 <li routerLink="/logout">Logout</li>
 
             </ul>
