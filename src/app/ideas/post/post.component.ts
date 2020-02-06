@@ -1,11 +1,11 @@
-import { Component, OnInit }                  from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { NgxuxAutocompleteItem }              from '@ngxux/autocomplete';
-import * as marked                            from 'marked';
-import { ToastrService }                      from 'ngx-toastr';
-import { Category }                           from '../../../_lib/category';
-import { Pageable }                           from '../../../_lib/Pageable';
-import { IdeasService }                       from '../ideas.service';
+import { NgxuxAutocompleteItem } from '@ngxux/autocomplete';
+import * as marked from 'marked';
+import { ToastrService } from 'ngx-toastr';
+import { Category } from '../../../_lib/category';
+import { Pageable } from '../../../_lib/Pageable';
+import { IdeasService } from '../ideas.service';
 
 @Component({
     selector: 'app-post',
@@ -29,21 +29,21 @@ export class PostComponent implements OnInit {
 
     public formGroup: FormGroup = new FormGroup({
 
-        name: new FormControl('asdf', [
+        title: new FormControl('', [
 
             Validators.minLength(2),
             Validators.maxLength(255)
 
         ]),
 
-        description: new FormControl('asdf', [
+        description: new FormControl('', [
 
             Validators.minLength(2),
             Validators.maxLength(255)
 
         ]),
 
-        categories: new FormControl('', Validators.required)
+        categories: new FormControl('')
 
     });
 

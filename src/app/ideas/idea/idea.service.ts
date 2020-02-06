@@ -1,6 +1,6 @@
-import {Injectable} from '@angular/core';
-import {ReplaySubject} from 'rxjs';
-import {Idea} from './idea';
+import { Injectable } from '@angular/core';
+import { ReplaySubject } from 'rxjs';
+import { Idea } from './idea';
 
 @Injectable({
     providedIn: 'root'
@@ -12,7 +12,7 @@ export class IdeaService {
     public testIdea: Idea = {
 
         id: '123',
-        name: 'My Test Idea',
+        title: 'My Test Idea',
         description: 'everything is awesomasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdfasdf asdf asdf asdf',
         shareMessage: 'asdf asdf asdf asdf'
 

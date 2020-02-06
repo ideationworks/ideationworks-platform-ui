@@ -1,14 +1,15 @@
-import {Component} from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {AuthenticationService} from '../../_lib/AuthenticationService';
-import {ToastrService} from 'ngx-toastr';
-import {NgxuxMatDialogService} from '@ngxux/ngxux-mat-dialog';
-import {Router} from '@angular/router';
+import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { AuthenticationService } from '../../_lib/AuthenticationService';
+import { ToastrService } from 'ngx-toastr';
+import { NgxuxMatDialogService } from '@ngxux/ngxux-mat-dialog';
+import { Router } from '@angular/router';
+import { LoginService } from "./login.service";
 
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
-    styleUrls: ['./login.component.scss']
+    styleUrls: [ './login.component.scss' ]
 })
 
 export class LoginComponent {
@@ -26,15 +27,16 @@ export class LoginComponent {
 
         password: new FormControl('', [
 
-            Validators.required,
-            Validators.minLength(8),
-            Validators.maxLength(255)
+            // Validators.required,
+            // Validators.minLength(8),
+            // Validators.maxLength(255)
 
         ]),
 
     });
 
     public constructor(private authenticationService: AuthenticationService,
+                       private loginService: LoginService,
                        private toastrService: ToastrService,
                        private ngxuxMatDialogService: NgxuxMatDialogService,
                        private router: Router) {
@@ -47,7 +49,11 @@ export class LoginComponent {
 
         this.ngxuxMatDialogService.close('login');
 
-        this.router.navigate(['/ideas']);
+        this.router.navigate([ '/ideas' ]);
+
+        this.loginService.resetSend(this.formGroup.value.email)
+
+        console.log(this.formGroup.value);
 
         // this.authenticationService.login(this.formGroup.get('email').value, this.formGroup.get('password').value).subscribe(result => {
 
